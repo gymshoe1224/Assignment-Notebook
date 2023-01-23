@@ -14,6 +14,9 @@
 		26D0CCC0296C6A4900AE17A4 /* Assignment_NotebookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D0CCBF296C6A4900AE17A4 /* Assignment_NotebookTests.swift */; };
 		26D0CCCA296C6A4900AE17A4 /* Assignment_NotebookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D0CCC9296C6A4900AE17A4 /* Assignment_NotebookUITests.swift */; };
 		26D0CCCC296C6A4900AE17A4 /* Assignment_NotebookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D0CCCB296C6A4900AE17A4 /* Assignment_NotebookUITestsLaunchTests.swift */; };
+		26D0CD642971B02C00AE17A4 /* AssignmentItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D0CD632971B02C00AE17A4 /* AssignmentItem.swift */; };
+		26D0CD662971B0D100AE17A4 /* AssignementList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D0CD652971B0D100AE17A4 /* AssignementList.swift */; };
+		26D0CD6829799EB200AE17A4 /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D0CD6729799EB200AE17A4 /* AddItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		26D0CCC5296C6A4900AE17A4 /* Assignment NotebookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Assignment NotebookUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D0CCC9296C6A4900AE17A4 /* Assignment_NotebookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment_NotebookUITests.swift; sourceTree = "<group>"; };
 		26D0CCCB296C6A4900AE17A4 /* Assignment_NotebookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment_NotebookUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		26D0CD632971B02C00AE17A4 /* AssignmentItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentItem.swift; sourceTree = "<group>"; };
+		26D0CD652971B0D100AE17A4 /* AssignementList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignementList.swift; sourceTree = "<group>"; };
+		26D0CD6729799EB200AE17A4 /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +100,11 @@
 		26D0CCAD296C6A4700AE17A4 /* Assignment Notebook */ = {
 			isa = PBXGroup;
 			children = (
-				26D0CCAE296C6A4700AE17A4 /* Assignment_NotebookApp.swift */,
-				26D0CCB0296C6A4700AE17A4 /* ContentView.swift */,
 				26D0CCB2296C6A4800AE17A4 /* Assets.xcassets */,
+				26D0CCAE296C6A4700AE17A4 /* Assignment_NotebookApp.swift */,
+				26D0CD622971AF4F00AE17A4 /* Models */,
+				26D0CD612971AF4600AE17A4 /* Components */,
+				26D0CD602971AF3D00AE17A4 /* Views */,
 				26D0CCB4296C6A4800AE17A4 /* Preview Content */,
 			);
 			path = "Assignment Notebook";
@@ -125,6 +133,31 @@
 				26D0CCCB296C6A4900AE17A4 /* Assignment_NotebookUITestsLaunchTests.swift */,
 			);
 			path = "Assignment NotebookUITests";
+			sourceTree = "<group>";
+		};
+		26D0CD602971AF3D00AE17A4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				26D0CCB0296C6A4700AE17A4 /* ContentView.swift */,
+				26D0CD6729799EB200AE17A4 /* AddItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		26D0CD612971AF4600AE17A4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		26D0CD622971AF4F00AE17A4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				26D0CD632971B02C00AE17A4 /* AssignmentItem.swift */,
+				26D0CD652971B0D100AE17A4 /* AssignementList.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26D0CD642971B02C00AE17A4 /* AssignmentItem.swift in Sources */,
+				26D0CD662971B0D100AE17A4 /* AssignementList.swift in Sources */,
 				26D0CCB1296C6A4700AE17A4 /* ContentView.swift in Sources */,
 				26D0CCAF296C6A4700AE17A4 /* Assignment_NotebookApp.swift in Sources */,
+				26D0CD6829799EB200AE17A4 /* AddItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
